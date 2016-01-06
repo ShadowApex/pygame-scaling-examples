@@ -45,6 +45,5 @@ while True:
 
     native_screen.fill(black)
     native_screen.blit(asteroid, asteroid_pos)
-    surface = pygame.transform.scale(native_screen, SCREEN_RESOLUTION)
-    screen.blit(surface, (0, 0))
+    pygame.transform.scale(native_screen, SCREEN_RESOLUTION, screen)
     pygame.display.flip()
